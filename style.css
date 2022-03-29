@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* DOES NOT WORK IN SAFARI AND MICROSOFT */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0 4rem 0;
+  background-color: #cbdaff;
+}
+
+.container {
+  width: 85%;
+  padding: 3rem 0 0 0;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+  padding: 4.5rem 0 0 0;
+}
+.left-side {
+  /* width: 40%; */
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pages-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.pages-list-item {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a152999;
+}
+.page-link {
+  width: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+.page-items-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a152999;
+}
+.button {
+  background-color: transparent;
+  padding: 2rem 3.5rem;
+  border: 1px solid black;
+  border-bottom-left-radius: 1.6rem;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hero-section {
+  background-color: #cbdaff;
+  /* margin-bottom: 3rem; */
+}
+.hero-text-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.subheading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  /* letter-spacing: 0.1rem; */
+  color: #464154;
+}
+.Primary-heading {
+  font-size: 5.8rem;
+  font-weight: 700;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  margin-bottom: 2.5rem;
+  line-height: 1.1;
+  color: #25224a;
+}
+.hero-desc {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  color: #464154;
+  /* margin-bottom: 5rem; */
+}
+
+.btn {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 0 0 0;
+}
+
+.hero-img-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img-box img {
+  width: 50%;
+  /* margin-bottom: 5rem; */
+}
+
+.logos {
+  background-color: #b7cbff;
+  padding: 0 0 3rem 0;
+}
+.logo {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25224a;
+  color: #ffffff;
+  gap: 1.6rem;
+}
+
+.btn-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.sectionCards {
+  padding: 10rem 0;
+  background-color: #f8faff;
+}
+
+.headingCards {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 90rem;
+  margin: 0 auto 0.38rem;
+  font-size: 5.8rem;
+  font-weight: 700;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  line-height: 1.1;
+  color: #25224a;
+}
+
+.cardItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 6rem 0 0 0;
+}
+.cardItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.cardItemTxt {
+  padding: 3rem 0 0 0;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  line-height: 1.1;
+  color: #25224a;
+}
+.cardDesc1 {
+  font-size: 1.9rem;
+  padding: 2rem 0;
+  text-align: center;
+  max-width: 25rem;
+}
+.cardDesc2 {
+  font-size: 1.9rem;
+  padding: 2rem 0;
+  text-align: center;
+  max-width: 40rem;
+}
+.cardDesc3 {
+  font-size: 1.9rem;
+  padding: 2rem 0;
+  text-align: center;
+  max-width: 25rem;
+}
+
+.sectionDiscover {
+  padding: 10rem 0;
+  background-color: #fff;
+}
+
+.discover-desc-para {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  color: #464154;
+  margin-bottom: 3rem;
+}
+
+.discover-list {
+  display: flex;
+  flex-direction: column;
+  /* gap: 3rem; */
+  list-style: none;
+}
+
+.discover-list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.dotted-icon {
+  height: 2rem;
+  width: 2rem;
+}
+.discover-desc {
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: 800;
+  color: #464154;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tell-more-btn {
+  padding: 5rem 0 0 0;
+}
+.discover-img-box {
+  position: relative;
+}
+
+.discover-img {
+  background-color: aliceblue;
+  padding: 35rem 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+.discover-inner-img {
+  width: 60rem;
+}
+.discover-inner-img img {
+  width: 100%;
+}
+
+.founderSection {
+  padding: 10rem 0;
+  background-color: #eaf0ff;
+}
+
+.founderDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.founder-txt {
+  /* font-size: 5rem; */
+  max-width: 65rem;
+  text-align: center;
+  font-size: 5.8rem;
+  font-weight: 700;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  line-height: 1.1;
+  color: #25224a;
+}
+
+.founderImg img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.founderDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 0;
+}
+.founderAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nameAuth {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.nameFounder {
+  font-size: 2.2rem;
+  color: #25224a;
+  font-weight: 600;
+}
+
+.founderOF {
+  font-size: 2rem;
+  color: #25224a;
+}
+.founderOF a {
+  text-decoration: none;
+  color: blue;
+}
+
+.quote {
+  font-size: 5rem;
+}
